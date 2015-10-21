@@ -95,7 +95,7 @@ def arguments(argsval):
     parser.add_argument('-nw', '--no_weekends',
                         required=False, action='store_true', default=False,
                         help="""do not commit on weekends""")
-    parser.add_argument('-mc', '--max_commits', type=int, default=5,
+    parser.add_argument('-mc', '--max_commits', type=int, default=7,
                         required=False, help="""Defines the maximum amount of
                         commits a day the script can make. Accepts a number
                         from 1 to 20. If N is specified the script commits
@@ -113,13 +113,13 @@ def arguments(argsval):
                         to the repository. The link is accepted in SSH or HTTPS
                         format. For example: git@github.com:user/repo.git or
                         https://github.com/user/repo.git""")
-    parser.add_argument('-un', '--user_name', type=str, required=False, default="lionking-123",
+    parser.add_argument('-un', '--user_name', type=str, required=False, default="SunshineMobile",
                         help="""Overrides user.name git config.
                         If not specified, the global config is used.""")
-    parser.add_argument('-ue', '--user_email', type=str, required=False, default="alexey.grigorev.91@bk.ru",
+    parser.add_argument('-ue', '--user_email', type=str, required=False, default="sunshine28446@gmail.com",
                         help="""Overrides user.email git config.
                         If not specified, the global config is used.""")
-    parser.add_argument('-da', '--days_ago', type=int, required=False, default=184,
+    parser.add_argument('-da', '--days_ago', type=int, required=False, default=2100,
                         help="""Show them if you want to contribute a few days in advance.""")
     parser.add_argument('-sd', '--start_date', type=str, required=False,
                         help="""Start Date.""")
